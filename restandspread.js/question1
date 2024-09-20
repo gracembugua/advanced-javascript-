@@ -1,0 +1,7 @@
+function filterAndSort(filterfn,...numbers){
+    const filteredNumbers = numbers.filter(filterFn);
+    const sortedNumbers= filteredNumbers.sort((prev,next)=>prev-next)
+    return sortedNumbers;
+}
+const isEven=(num)=>num %2===0;
+console.log(filterAndSort(isEven,5,3,8,6,2))
